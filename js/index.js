@@ -6,4 +6,6 @@ function calculateTriangleArea (){
     const area = 0.5 * height * base;
     const result = document.getElementById('result');
     result.innerText = area;
+    const besideResult = document.getElementById('resultValue');
+    besideResult.innerText = area;
 }
