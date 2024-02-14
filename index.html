@@ -18,14 +18,17 @@
         <!-- Triangle Area -->
         <div class="card bg-base-100 mt-4 ml-4 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+              <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div>
+                <input class="p-1 border border-gray-200" id="base" type="number" placeholder="b"><span>CM</span>
+                <input class="p-1 border border-gray-200 mt-2" type="number" placeholder="h" id="height"><span>CM</span>
               </div>
+              <p class="text-2xl ">Area: <span id="result"></span> cm<sup>2</sup></p>
+                <button class="btn bg-slate-400 w-full text-white font-extrabold" id="calculate-btn" onclick="calculateTriangleArea()">Calculate</button>
             </div>
           </div>
         <!-- Triangle Area -->
@@ -97,11 +100,14 @@
        <!-- calculation area content -->
        <div class="w-80 border-2 border-gray-400">
         <h2 class="text-3xl text-center p-4 underline underline-offset-3">Area Calculation</h2>
+        <p>1. Triangle <span id="resultValue">00</span>cm2</p>
        </div>
      </div>
     </main>
     <footer>
 
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
