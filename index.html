@@ -55,15 +55,15 @@
               <img src="/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rectangular</h2>
+              <h2 class="card-title">Parallelogram</h2>
               <p>Area (A) = w       I</p>
               <div>
-                <input class="p-1 border border-gray-200" id="base" type="number" placeholder="b"><span>CM</span>
-                <input class="p-1 border border-gray-200 mt-2" type="number" placeholder="h" id="height"><span>CM</span>
+                <input class="p-1 border border-gray-200" id="parale-base" type="number" placeholder="b"><span>CM</span>
+                <input  class="p-1 border border-gray-200 mt-2" id="parale-height" type="number" placeholder="h" id="height"><span>CM</span>
               </div>
-              <p class="text-2xl">Area: <span id="result"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area: <span id="parale-result"></span> cm<sup>2</sup></p>
               <!-- <div class="card-actions"> -->
-                <button class="btn btn-primary w-full bg-slate-400 text-1xl font-bold">Calculate</button>
+                <button onclick="parallelogram()" class="btn btn-primary w-full bg-slate-400 text-1xl font-bold">Calculate</button>
               <!-- </div> -->
             </div>
           </div>
@@ -91,15 +91,15 @@
               <img src="/images/pentagon.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rectangular</h2>
-              <p>Area (A) = w       I</p>
+              <h2 class="card-title">Pentagon</h2>
+              <p>Area (A) = 0.5 P x B</p>
               <div>
-                <input class="p-1 border border-gray-200" id="base" type="number" placeholder="b"><span>CM</span>
-                <input class="p-1 border border-gray-200 mt-2" type="number" placeholder="h" id="height"><span>CM</span>
+                <input class="p-1 border border-gray-200" id="penta-base" type="number" placeholder="b"><span>CM</span>
+                <input class="p-1 border border-gray-200 mt-2" type="number" placeholder="h" id="penta-height"><span>CM</span>
               </div>
-              <p class="text-2xl">Area: <span id="result"></span> cm<sup>2</sup></p>
+              <p class="text-2xl">Area: <span id="penta-result"></span> cm<sup>2</sup></p>
               <!-- <div class="card-actions"> -->
-                <button class="btn btn-primary w-full bg-slate-400 text-1xl font-bold">Calculate</button>
+                <button onclick="pentagonArea()" class="btn btn-primary w-full bg-slate-400 text-1xl font-bold">Calculate</button>
               <!-- </div> -->
             </div>
           </div>
@@ -136,5 +136,7 @@
 
     <script src="js/index.js"></script>
     <script src="js/rectangular.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/pentagon.js"></script>
 </body>
 </html>
